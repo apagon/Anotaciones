@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FFF9C8">
+    <RelativeLayout android:id="@+id/layoutheader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:background="@drawable/fondofila" android:paddingBottom="5dp" android:paddingLeft="5dp" android:paddingTop="5dp">
+        <TextView android:id="@+id/lbltitulo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Titulo:" android:textSize="18sp"/>
+        <EditText android:id="@+id/ettitulo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/lbltitulo" android:background="@android:color/transparent" android:hint="no titulo" android:singleLine="true" android:textColorLink="#ff000000" android:textSize="18sp"/>
+        <TextView android:id="@+id/tvfecha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:paddingRight="10sp" android:textSize="12sp"
+            android:text="fecha" />
+    </RelativeLayout>
+    <view xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/body" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/layoutheader" class="com.example.davidrojomartin.anotaciones.EditTextLineas" android:background="@android:color/transparent" android:inputType="textCapSentences|textMultiLine" android:gravity="top" android:padding="5dp" android:scrollbars="vertical" android:textSize="22sp"/>
+</RelativeLayout>
